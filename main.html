@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Header with ARIA role -->
+    <header role="banner">
+        <h1 role="heading" aria-level="1">My Portfolio</h1>
+    </header>
 
+    <!-- Navigation Bar with ARIA role -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#skills">Skills</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 role="heading" aria-level="2">About Me</h2>
+        <img src="profile.jpg"  role="img">
+        <p>Hi, I'm a web developer passionate about creating accessible and user-friendly websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 role="heading" aria-level="2">Skills</h2>
+        <ul role="list">
+            <li role="listitem">HTML</li>
+            <li role="listitem">CSS</li>
+            <li role="listitem">JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 role="heading" aria-level="2">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Portfolio Website</li>
+            <li role="listitem">E-commerce Platform</li>
+            <li role="listitem">Blog Application</li>
+        </ul>
+    </section>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
